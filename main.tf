@@ -4,7 +4,11 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "gourav77889tata"  # Change this to a globally unique name
-  aws_s3_bucket_acl    = "private"
+  }
+
+resource "aws_s3_bucket_acl" "gourav77889tata" {
+  bucket = aws_s3_bucket.gourav77889tata.id
+  acl    = "private"
 }
 
 output "bucket_name" {
