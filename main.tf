@@ -6,8 +6,8 @@ resource "aws_s3_bucket" "my_bucket" {
   bucket = "gourav77889tata"  # Change this to a globally unique name
   }
 
-resource "aws_s3_bucket_acl" "gourav77889tata" {
-  bucket = aws_s3_bucket.gourav77889tata.id
+resource "aws_s3_bucket_acl" "my_bucket" {
+  bucket = aws_s3_bucket.my_bucket.id
   acl    = "private"
 }
 
