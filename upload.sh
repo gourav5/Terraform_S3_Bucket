@@ -7,7 +7,7 @@ S3_PATH="s3://gourav77889tata/"         # Optional: specify the S3 path
 awsprofile=devops
 
 # Copy file to S3
-aws s3 cp "$FILE_PATH" "$S3_PATH" --recursive 
+aws s3 cp "$FILE_PATH" "$S3_PATH" --recursive --profile $awsprofile
 
 # Check if the command was successful
 if [ $? -eq 0 ]; then
