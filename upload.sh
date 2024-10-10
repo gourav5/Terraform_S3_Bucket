@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-FILE_PATH="/var/www/web2/index.html"  # Change this to your file path
+FILE_PATH="/var/www/web2/"  # Change this to your file path
 BUCKET_NAME="gourav77889tata"   # Change this to your S3 bucket name
 S3_PATH="s3://gourav77889tata/"         # Optional: specify the S3 path
 awsprofile=devops
