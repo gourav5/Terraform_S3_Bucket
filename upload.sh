@@ -10,7 +10,7 @@ aws s3 cp "$FILE_PATH" "$S3_PATH"
 
 # Check if the command was successful
 if [ $? -eq 0 ]; then
-    echo "File uploaded successfully to $S3_PATH"
+    echo "File uploaded successfully to $S3_PATH" --recursive
 else
     echo "Error uploading file to S3"
 fi
