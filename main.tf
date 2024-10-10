@@ -1,11 +1,5 @@
-#provider "aws" {
- # region = "ap-south-1"  # Change to your desired region
-#}
-
 provider "aws" {
-    region = "ap-south-1"
-    access_key = "AKIA5FTZB4KVHRNR3KWP"
-    secret_key = "Yce/+45WQk/14NLrz8+0bw0RR49cJ1flMlzwzTCo"
+  region = "ap-south-1"  # Change to your desired region
 }
 
 resource "aws_s3_bucket" "my_bucket" {
